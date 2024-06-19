@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-root.render(App());
+root.render(<App />);
