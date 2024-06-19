@@ -16,7 +16,6 @@ container1.append(buttonVanillaJs);
 const root = ReactDOM.createRoot(container2);
 const buttonReact = React.createElement("button", {}, "React");
 
-// TESTING
 container2.append(buttonReact);
 root.render(buttonReact);
 
