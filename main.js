@@ -8,6 +8,6 @@ const buttonVanillaJs = document.createElement("button");
 buttonVanillaJs.textContent = "Vanilla JS"; 
 // or buttonVanillaJs.innerText = "Vanilla JS";
 
-console.log(buttonVanillaJs);
-// container1.appendChild(buttonVanillaJs);
+container1.appendChild(buttonVanillaJs);
+// or container1.append(buttonVanillaJs);
 
