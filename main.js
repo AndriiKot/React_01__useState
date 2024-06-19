@@ -1,23 +1,12 @@
 ﻿"use strict";
 
-const container1 = document.querySelector(".container-1");
-const container2 = document.querySelector(".container-2");
+const container = document.querySelector(".container");
 
-// VanillaJS
-const buttonVanillaJs = document.createElement("button");
-buttonVanillaJs.textContent = "Vanilla JS"; 
-// or buttonVanillaJs.innerText = "Vanilla JS";
-
-container1.append(buttonVanillaJs);
-// or container1.appendChild(buttonVanillaJs);
-
-
-// React
-const root = ReactDOM.createRoot(container2);
+const root = ReactDOM.createRoot(container);
 const buttonReact = React.createElement("button", {}, "React");
 
-container2.append(buttonReact);
+container.append(buttonReact);
 root.render(buttonReact);
 
 
-console.log(buttonVanillaJs, buttonReact);
+console.log(buttonReact);
