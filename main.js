@@ -7,8 +7,6 @@ const root = ReactDOM.createRoot(container);
 <h1 className="title__React-App">React App</h1>;
 
 function App(props) {
-  console.log(props);
-
   return (
     <div>
       <h1>{props.title}</h1>
