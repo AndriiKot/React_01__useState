@@ -8,7 +8,10 @@ const buttonVanillaJs = document.createElement("button");
 buttonVanillaJs.textContent = "Vanilla JS"; 
 // or buttonVanillaJs.innerText = "Vanilla JS";
 
-container1.appendChild(buttonVanillaJs);
+// TESTING append()
+
+container2.append(buttonVanillaJs);
+// container1.appendChild(buttonVanillaJs);
 
 // React
 const buttonReact = React.createElement("button");
