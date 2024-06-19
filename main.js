@@ -12,11 +12,11 @@ function App(props) {
   return (
     <div>
       <h1>{props.title}</h1>
-      <button className="btn" type="submit" onClick={() => setCounter(1)}>
+      <button className="btn" type="submit" onClick={() => setCounter(counter + 1)}>
         {props.labeledButton} {counter}
       </button>
     </div>
   );
 }
 
-root.render(<App title="React App" labeledButton="Click me!" />);
+root.render(<App title="React App" labeledButton="Counter: " />);
