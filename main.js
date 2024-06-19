@@ -24,7 +24,15 @@ const buttonReact = React.createElement(
   "React"
 );
 
-container.append(buttonReact);
-root.render(buttonReact);
+const boxReact = React.createElement(
+  "div",
+  {
+    className: "box__React",
+  },
+  [titleReact, buttonReact]
+)
 
-console.log(buttonReact, titleReact);
+root.render(boxReact);
+
+
+
