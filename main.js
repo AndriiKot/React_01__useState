@@ -4,18 +4,18 @@ const container = document.querySelector(".container");
 
 const root = ReactDOM.createRoot(container);
 
-const titleReact = <h1 className="title__React-App">React App</h1>;
-
-const buttonReact = (
-  <button className="btn" type="submit" onClick={() => console.log("Clicked!")}>
-    React
-  </button>
-);
+<h1 className="title__React-App">React App</h1>;
 
 const boxReact = (
   <div className="box__React">
-    {titleReact}
-    {buttonReact}
+    <h1 className="title__React-App">React App</h1>
+    <button
+      className="btn"
+      type="submit"
+      onClick={() => console.log("Clicked!")}
+    >
+      React
+    </button>
   </div>
 );
 
