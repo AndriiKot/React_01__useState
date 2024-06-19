@@ -5,5 +5,9 @@ const container2 = document.querySelector(".container-2");
 
 
 const buttonVanillaJs = document.createElement("button");
+buttonVanillaJs.textContent = "Vanilla JS"; 
+// or buttonVanillaJs.innerText = "Vanilla JS";
 
 console.log(buttonVanillaJs);
+// container1.appendChild(buttonVanillaJs);
+
