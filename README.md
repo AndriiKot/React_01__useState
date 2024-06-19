@@ -45,17 +45,6 @@
     </a>
   </span> 
   
-  <span class="D3">
-    <a href="https://d3js.org/">
-      <img
-        src="https://github.com/AndriiKot/___Icons__and__Links___/blob/main/icons/d3-2.svg"
-        alt="D3 logo"
-        width="100"
-        height="100"
-      />
-    </a>
-  </span>
-
   <span class="Babel">
     <a href="https://babeljs.io/">
       <img
