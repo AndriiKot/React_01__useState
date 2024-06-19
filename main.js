@@ -9,15 +9,10 @@ const root = ReactDOM.createRoot(container);
 function App(props) {
   const [counter, setCounter] = React.useState(0);
 
-
   return (
     <div>
       <h1>{props.title}</h1>
-      <button
-        className="btn"
-        type="submit"
-        onClick={() => console.log("Clicked!")}
-      >
+      <button className="btn" type="submit" onClick={() => setCounter(1)}>
         {props.labeledButton} {counter}
       </button>
     </div>
