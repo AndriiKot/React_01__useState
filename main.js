@@ -9,5 +9,4 @@ buttonVanillaJs.textContent = "Vanilla JS";
 // or buttonVanillaJs.innerText = "Vanilla JS";
 
 container1.appendChild(buttonVanillaJs);
-// or container1.append(buttonVanillaJs);
 
