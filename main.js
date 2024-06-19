@@ -4,32 +4,32 @@ const container = document.querySelector(".container");
 
 const root = ReactDOM.createRoot(container);
 
-const titleReact = React.createElement(
-  "h1",
-  {
-    className: "title__React-App",
-  },
-  "React App"
-);
+// const titleReact = React.createElement(
+//   "h1",
+//   {
+//     className: "title__React-App",
+//   },
+//   "React App"
+// );
 
-const buttonReact = React.createElement(
-  "button",
-  {
-    className: "btn",
-    type: "submit",
-    onClick: () => {
-      console.log("clicked");
-    },
-  },
-  "React"
-);
+// const buttonReact = React.createElement(
+//   "button",
+//   {
+//     className: "btn",
+//     type: "submit",
+//     onClick: () => {
+//       console.log("clicked");
+//     },
+//   },
+//   "React"
+// );
 
-const boxReact = React.createElement(
-  "div",
-  {
-    className: "box__React",
-  },
-  [titleReact, buttonReact]
-);
+// const boxReact = React.createElement(
+//   "div",
+//   {
+//     className: "box__React",
+//   },
+//   [titleReact, buttonReact]
+// );
 
-root.render(boxReact);
+// root.render(boxReact);
