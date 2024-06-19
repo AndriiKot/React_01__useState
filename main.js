@@ -13,8 +13,12 @@ container1.append(buttonVanillaJs);
 
 
 // React
-const buttonReact = React.createElement("button");
+const root = ReactDOM.createRoot(container2);
+const buttonReact = React.createElement("button", {}, "React testing 1");
 
 // TESTING
 container2.append(buttonReact);
+root.render(buttonReact);
+
+
 console.log(buttonVanillaJs, buttonReact);
