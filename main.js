@@ -8,6 +8,9 @@ const buttonReact = React.createElement(
   {
     className: "btn",
     type: "submit",
+    onClick: () => {
+      console.log("clicked");
+    }
   },
   "React"
 );
