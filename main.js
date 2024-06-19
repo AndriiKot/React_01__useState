@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(container);
 <h1 className="title__React-App">React App</h1>;
 
 function App(props) {
-  const [count, setCount] = React.useState(0);
+  const [counter, setCounter] = React.useState(0);
 
 
   return (
@@ -18,7 +18,7 @@ function App(props) {
         type="submit"
         onClick={() => console.log("Clicked!")}
       >
-        {props.labeledButton}
+        {props.labeledButton} {counter}
       </button>
     </div>
   );
