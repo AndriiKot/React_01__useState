@@ -3,6 +3,15 @@
 const container = document.querySelector(".container");
 
 const root = ReactDOM.createRoot(container);
+
+const titleReact = React.createElement(
+    "h1",
+    {
+        className: "title__React-App",
+    },
+    "React App"
+);
+
 const buttonReact = React.createElement(
   "button",
   {
@@ -18,4 +27,4 @@ const buttonReact = React.createElement(
 container.append(buttonReact);
 root.render(buttonReact);
 
-console.log(buttonReact);
+console.log(buttonReact, titleReact);
