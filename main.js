@@ -8,12 +8,20 @@ const root = ReactDOM.createRoot(container);
 
 function App(props) {
   const [counter, setCounter] = React.useState(0);
+  const [hiddenTitle, setHiddenTitle] = React.useState(true);
 
   return (
     <div>
-      <h1>{props.title}</h1>
-      <button className="btn" type="submit" onClick={() => setCounter(counter + 1)}>
+      {hiddenTitle && <h1>{props.title}</h1>}
+      <button
+        className="btn"
+        type="submit"
+        onClick={() => setCounter(counter + 1)}
+      >
         {props.labeledButton} {counter}
+      </button>
+      <button onClick={() => setHiddenTitle(!hiddenTitle)}>
+        {!hiddenTitle ? "Show" : "Hide"} Title
       </button>
     </div>
   );
