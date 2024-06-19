@@ -14,4 +14,7 @@ container1.append(buttonVanillaJs);
 
 // React
 const buttonReact = React.createElement("button");
-console.log(buttonReact);
+
+// TESTING
+container2.append(buttonReact);
+console.log(buttonVanillaJs, buttonReact);
