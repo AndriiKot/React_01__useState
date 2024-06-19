@@ -6,17 +6,19 @@ const root = ReactDOM.createRoot(container);
 
 <h1 className="title__React-App">React App</h1>;
 
-const boxReact = (
-  <div className="box__React">
-    <h1 className="title__React-App">React App</h1>
-    <button
-      className="btn"
-      type="submit"
-      onClick={() => console.log("Clicked!")}
-    >
-      React
-    </button>
-  </div>
-);
+function App() {
+  return (
+    <div className="box__React">
+      <h1 className="title__React-App">React App</h1>
+      <button
+        className="btn"
+        type="submit"
+        onClick={() => console.log("Clicked!")}
+      >
+        React
+      </button>
+    </div>
+  );
+}
 
-root.render(boxReact);
+root.render(App());
