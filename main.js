@@ -1,23 +1,35 @@
 ﻿"use strict";
 
-const container1 = document.querySelector(".container-1");
-const container2 = document.querySelector(".container-2");
+const container = document.querySelector(".container");
 
-// VanillaJS
-const buttonVanillaJs = document.createElement("button");
-buttonVanillaJs.textContent = "Vanilla JS"; 
-// or buttonVanillaJs.innerText = "Vanilla JS";
+const root = ReactDOM.createRoot(container);
 
-container1.append(buttonVanillaJs);
-// or container1.appendChild(buttonVanillaJs);
+const titleReact = React.createElement(
+  "h1",
+  {
+    className: "title__React-App",
+  },
+  "React App"
+);
 
+const buttonReact = React.createElement(
+  "button",
+  {
+    className: "btn",
+    type: "submit",
+    onClick: () => {
+      console.log("clicked");
+    },
+  },
+  "React"
+);
 
-// React
-const root = ReactDOM.createRoot(container2);
-const buttonReact = React.createElement("button", {}, "React");
+const boxReact = React.createElement(
+  "div",
+  {
+    className: "box__React",
+  },
+  [titleReact, buttonReact]
+);
 
-container2.append(buttonReact);
-root.render(buttonReact);
-
-
-console.log(buttonVanillaJs, buttonReact);
+root.render(boxReact);
