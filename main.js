@@ -1,30 +1,23 @@
 ﻿"use strict";
 
-const container = document.querySelector(".container");
+const container1 = document.querySelector(".container-1");
+const container2 = document.querySelector(".container-2");
 
-const root = ReactDOM.createRoot(container);
+// VanillaJS
+const buttonVanillaJs = document.createElement("button");
+buttonVanillaJs.textContent = "Vanilla JS"; 
+// or buttonVanillaJs.innerText = "Vanilla JS";
 
-<h1 className="title__React-App">React App</h1>;
+container1.append(buttonVanillaJs);
+// or container1.appendChild(buttonVanillaJs);
 
-function App(props) {
-  const [counter, setCounter] = React.useState(0);
-  const [hiddenTitle, setHiddenTitle] = React.useState(true);
 
-  return (
-    <div>
-      {hiddenTitle && <h1>{props.title}</h1>}
-      <button
-        className="btn"
-        type="submit"
-        onClick={() => setCounter(counter + 1)}
-      >
-        {props.labeledButton} {counter}
-      </button>
-      <button onClick={() => setHiddenTitle(!hiddenTitle)}>
-        {!hiddenTitle ? "Show" : "Hide"} Title
-      </button>
-    </div>
-  );
-}
+// React
+const root = ReactDOM.createRoot(container2);
+const buttonReact = React.createElement("button", {}, "React");
 
-root.render(<App title="React App" labeledButton="Counter: " />);
+container2.append(buttonReact);
+root.render(buttonReact);
+
+
+console.log(buttonVanillaJs, buttonReact);
