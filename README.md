@@ -1,5 +1,7 @@
 ﻿# React My App 01
 
+## !!! For the application to work correctly, use 'Live Server' !!!
+
 <div class="logos">
   <span class="React">
     <a href="https://react.dev/">

@@ -11,7 +11,7 @@ function App(props) {
   const [hiddenTitle, setHiddenTitle] = React.useState(true);
 
   return (
-    <div>
+    <div className="App">
       {hiddenTitle && <h1>{props.title}</h1>}
       <button
         className="btn"
