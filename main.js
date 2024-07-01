@@ -12,7 +12,11 @@ function App(props) {
 
   return (
     <div className="App">
-      {hiddenTitle && <h1>{props.title}</h1>}
+      {hiddenTitle ? (
+        <h1>{props.title}</h1>
+      ) : (
+        <h1 className="hidden">{props.title}</h1>
+      )}
       <button
         className="btn"
         type="submit"
@@ -21,7 +25,7 @@ function App(props) {
         {props.labeledButton} {counter}
       </button>
       <button onClick={() => setHiddenTitle(!hiddenTitle)}>
-        {!hiddenTitle ? "Show" : "Hide"} Title
+        {!hiddenTitle ? "Show" : "Hide  "} App
       </button>
     </div>
   );
