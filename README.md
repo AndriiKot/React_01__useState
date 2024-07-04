@@ -1,7 +1,5 @@
 ﻿# React My App 01 (useState)
-
 ## !!! For the application to work correctly, use 'Live Server' !!!
-
 
 <div class="logos">
   <span class="React">
